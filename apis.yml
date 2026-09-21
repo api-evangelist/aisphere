@@ -1,17 +1,20 @@
 aid: aisphere
 name: Aisphere
-description: 'Aisphere is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Aisphere, operating under the brand 爱诗科技 (AIsphere), is a Beijing‑based artificial intelligence company founded in 2023. It focuses on developing generative AI video models and related cloud services, offering an open API platform for developers to create text‑to‑video content, multi‑shot productions, and AI‑assisted creative workflows. The company emphasizes high‑quality, accessible AI video generation tools for global users, targeting industries such as e‑commerce, entertainment, gaming, and advertising. Aisphere aims to democratize AI‑driven video creation and accelerate digital transformation across media production.'
 url: https://raw.githubusercontent.com/api-evangelist/aisphere/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-21 (modular-v1; was harvest)
 specificationVersion: '0.20'
 created: '2026-09-21'
 modified: '2026-09-21'
 tags:
-- Company
+- AI
+- Video
+- GenerativeAI
+- Cloud
+- Beijing
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +23,19 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://equityzen.com/company/aisphere
+  url: https://aishiai.com
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: API documentation is only available as rendered HTML pages with no machine‑readable OpenAPI or other contract.
+  evidence:
+    - url: https://aishiai.com/#api
+      status: 200
+  checked: 2026-09-21
+x-enrichment:
+  date: '2026-09-21'
+  status: enriched
+  artifacts_added: 1
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
